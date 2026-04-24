@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio Booklet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-shell">
+        <header class="topbar">
+            <a href="#" class="brand-mark">Engineering Portfolio</a>
+
+            <nav class="chapter-nav" aria-label="Booklet chapters">
+                <button class="chapter-link active" type="button" data-chapter="about">About Me</button>
+                <button class="chapter-link" type="button" data-chapter="experience">Experience</button>
+                <button class="chapter-link" type="button" data-chapter="projects">Projects</button>
+                <button class="chapter-link" type="button" data-chapter="contact">Contact</button>
+            </nav>
+
+            <div class="topbar-controls">
+                <button id="prev-page" class="nav-button" type="button" aria-label="Previous page">Prev</button>
+                <p class="page-indicator"><span id="current-page">1</span> / <span id="total-pages">16</span></p>
+                <button id="next-page" class="nav-button" type="button" aria-label="Next page">Next</button>
+            </div>
+        </header>
+
+        <main class="booklet-app">
+            <section class="booklet-frame">
+                <div id="book" class="book">
+                    <article class="page page-cover" data-chapter="cover">
+                        <div class="page-content cover-content">
+                            <p class="page-kicker">Integrated Engineering Portfolio</p>
+                            <h1>Monojit Dhar Rommyo</h1>
+                            <p class="cover-role">Mechatronic Systems Engineer</p>
+                            <p class="cover-text">
+                                Building systems where hardware, controls, sensing, and implementation come
+                                together with clarity, discipline, and real-world engineering intent.
+                            </p>
+                            <div class="cover-details">
+                                <span>Systems Engineering</span>
+                                <span>Hardware + Control</span>
+                                <span>Embedded Implementation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="page page-about page-about-intro" data-chapter="about">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">01</p>
+                                <h2>About Me</h2>
+                            </div>
+                            <div class="about-left-layout">
+                                <div class="about-left-sections">
+                                    <section class="paper-panel about-feature-section intro-block">
+                                        <p class="overview-tag">Me</p>
+                                        <p class="about-feature-text">
+                                            I am a Mechatronic Systems Engineering student focused on building systems that combine control, hardware, and mechanical design. My work connects simulation, prototyping, and practical implementation.
+                                        </p>
+                                    </section>
+
+                                    <section class="paper-panel about-feature-section">
+                                        <p class="overview-tag">What Sets Me Apart</p>
+                                        <p class="about-feature-text">
+                                            I approach engineering with a systems mindset and adapt quickly to the problem in front of me. Whether through analysis, experimentation, or learning new tools, I work to move solutions forward.
+                                        </p>
+                                    </section>
+
+                                    <section class="paper-panel about-feature-section spotlight-panel">
+                                        <p class="overview-tag">Why Hire Me</p>
+                                        <p class="about-feature-text">
+                                            I bring technical curiosity, practical experience, and a dependable work ethic. I aim to contribute by learning fast, communicating clearly, and building solutions that work in real settings.
+                                        </p>
+                                    </section>
+                                </div>
+
+                                <aside class="about-media-placeholder" aria-label="Media placeholder">
+                                    <div class="about-media-frame">
+                                        <span>Image or looping video placeholder</span>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="page page-about page-capabilities" data-chapter="about">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">02</p>
+                                <h2>Capabilities</h2>
+                            </div>
+                            <section class="capabilities-stage" aria-labelledby="capabilities-title">
+                                <h3 id="capabilities-title" class="sr-only">Capabilities</h3>
+                                <div class="capabilities-grid">
+                                    <section class="capability-card capability-card-software">
+                                        <p class="capability-card-kicker">Platforms</p>
+                                        <h3>Software</h3>
+                                        <div class="capability-pill-list">
+                                            <span class="capability-pill"><i data-lucide="circuit-board" aria-hidden="true"></i><span>Multisim</span></span>
+                                            <span class="capability-pill"><i data-lucide="zap" aria-hidden="true"></i><span>LTspice</span></span>
+                                            <span class="capability-pill"><i data-lucide="box" aria-hidden="true"></i><span>SolidWorks</span></span>
+                                            <span class="capability-pill"><i data-lucide="compass" aria-hidden="true"></i><span>FreeCAD</span></span>
+                                            <span class="capability-pill"><i data-lucide="component" aria-hidden="true"></i><span>EAGLE</span></span>
+                                            <span class="capability-pill"><i data-lucide="workflow" aria-hidden="true"></i><span>Simulink</span></span>
+                                            <span class="capability-pill"><i data-lucide="package" aria-hidden="true"></i><span>Granta EduPack</span></span>
+                                            <span class="capability-pill"><i data-lucide="clipboard-check" aria-hidden="true"></i><span>Procore</span></span>
+                                            <span class="capability-pill"><i data-lucide="calendar-range" aria-hidden="true"></i><span>Primavera P6</span></span>
+                                            <span class="capability-pill"><i data-lucide="briefcase" aria-hidden="true"></i><span>Microsoft Office</span></span>
+                                            <span class="capability-pill"><i data-lucide="wind" aria-hidden="true"></i><span>OpenFOAM</span></span>
+                                        </div>
+                                    </section>
+
+                                    <section class="capability-card capability-card-specialized">
+                                        <p class="capability-card-kicker">Applied Focus</p>
+                                        <h3>Specialized</h3>
+                                        <div class="capability-pill-list">
+                                            <span class="capability-pill"><i data-lucide="radar" aria-hidden="true"></i><span>Sensor Integration</span></span>
+                                            <span class="capability-pill"><i data-lucide="scan" aria-hidden="true"></i><span>CFD Analysis</span></span>
+                                            <span class="capability-pill"><i data-lucide="sliders-horizontal" aria-hidden="true"></i><span>System Optimization</span></span>
+                                            <span class="capability-pill"><i data-lucide="microchip" aria-hidden="true"></i><span>PCB Design</span></span>
+                                            <span class="capability-pill"><i data-lucide="chart-line" aria-hidden="true"></i><span>Data Analysis</span></span>
+                                            <span class="capability-pill"><i data-lucide="file-text" aria-hidden="true"></i><span>Technical Report Writing</span></span>
+                                        </div>
+                                    </section>
+
+                                    <section class="capability-card capability-card-programming">
+                                        <p class="capability-card-kicker">Core Tools</p>
+                                        <h3>Programming</h3>
+                                        <div class="capability-pill-list">
+                                            <span class="capability-pill"><i data-lucide="file-code-2" aria-hidden="true"></i><span>Python</span></span>
+                                            <span class="capability-pill"><i data-lucide="calculator" aria-hidden="true"></i><span>MATLAB</span></span>
+                                            <span class="capability-pill"><i data-lucide="braces" aria-hidden="true"></i><span>C++</span></span>
+                                            <span class="capability-pill"><i data-lucide="database" aria-hidden="true"></i><span>SQL</span></span>
+                                            <span class="capability-pill"><i data-lucide="chart-line" aria-hidden="true"></i><span>R</span></span>
+                                            <span class="capability-pill"><i data-lucide="cpu" aria-hidden="true"></i><span>Arduino</span></span>
+                                            <span class="capability-pill"><i data-lucide="sigma" aria-hidden="true"></i><span>LaTeX</span></span>
+                                        </div>
+                                    </section>
+
+                                    <section class="capability-card capability-card-lab">
+                                        <p class="capability-card-kicker">Hands-On</p>
+                                        <h3>Lab &amp; Hardware</h3>
+                                        <div class="capability-pill-list">
+                                            <span class="capability-pill"><i data-lucide="gauge" aria-hidden="true"></i><span>Multimeters</span></span>
+                                            <span class="capability-pill"><i data-lucide="activity" aria-hidden="true"></i><span>Oscilloscopes</span></span>
+                                            <span class="capability-pill"><i data-lucide="wrench" aria-hidden="true"></i><span>Soldering Stations</span></span>
+                                            <span class="capability-pill"><i data-lucide="grid-3x3" aria-hidden="true"></i><span>Breadboards</span></span>
+                                            <span class="capability-pill"><i data-lucide="printer" aria-hidden="true"></i><span>3D Printers</span></span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-experience" data-chapter="experience">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">03</p>
+                                <h2>Experience</h2>
+                            </div>
+                            <p class="intro-paragraph experience-intro">
+                                Roles that shaped how I coordinate people, solve operational problems, and communicate clearly in fast-moving environments.
+                            </p>
+                            <section class="experience-timeline" aria-label="Experience timeline">
+                                <div class="timeline-line" aria-hidden="true"></div>
+
+                                <article class="timeline-entry timeline-entry-featured">
+                                    <div class="timeline-marker" aria-hidden="true"></div>
+                                    <section class="timeline-card">
+                                        <p class="overview-tag">2025 - Present</p>
+                                        <h3>CRSC</h3>
+                                        <p class="timeline-role">Project Coordinator Intern</p>
+                                        <p>Working on data center infrastructure, coordination, and system-level operations.</p>
+                                    </section>
+                                </article>
+
+                                <article class="timeline-entry">
+                                    <div class="timeline-marker" aria-hidden="true"></div>
+                                    <section class="timeline-card">
+                                        <p class="overview-tag">2024 - 2025</p>
+                                        <h3>IKEA</h3>
+                                        <p class="timeline-role">Sales Associate</p>
+                                        <p>Customer-facing role focused on problem-solving and operational flow.</p>
+                                    </section>
+                                </article>
+
+                                <article class="timeline-entry">
+                                    <div class="timeline-marker" aria-hidden="true"></div>
+                                    <section class="timeline-card">
+                                        <p class="overview-tag">2023 - 2024</p>
+                                        <h3>guard.me</h3>
+                                        <p class="timeline-role">Customer Support</p>
+                                        <p>Handled client issues and built communication under pressure.</p>
+                                    </section>
+                                </article>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-experience" data-chapter="experience">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">04</p>
+                                <h2>CRSC Experience</h2>
+                            </div>
+                            <section class="paper-panel experience-deep-dive">
+                                <p class="overview-tag">Systems + Execution</p>
+                                <p class="experience-lead">
+                                    At CRSC, I work at the intersection of engineering and real-world execution.
+                                </p>
+                                <p>
+                                    I coordinate across trades, engineers, and vendors to keep large-scale data center projects aligned and moving. My work involves translating on-site realities into structured data, tracking progress through Primavera P6 and Excel systems, and supporting commissioning workflows.
+                                </p>
+                                <p>
+                                    I regularly interact with systems like CRAC units, BMS controls, and infrastructure layouts - building a practical understanding of how engineered systems operate beyond theory.
+                                </p>
+                                <p>
+                                    This experience has strengthened my ability to think in systems, communicate across disciplines, and solve problems in fast-moving environments.
+                                </p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">05</p>
+                                <h2>Pulsating Heat Pipe</h2>
+                            </div>
+                            <p class="intro-paragraph">
+                                Design and simulation work focused on thermal behavior, flow understanding,
+                                and translating heat transfer concepts into a structured engineering study.
+                            </p>
+                            <section class="paper-panel">
+                                <h3>Technical Highlights</h3>
+                                <ul class="detail-list">
+                                    <li>Thermal behavior evaluation</li>
+                                    <li>Geometry-driven performance thinking</li>
+                                    <li>Simulation-guided design review</li>
+                                </ul>
+                            </section>
+                            <section class="paper-panel">
+                                <h3>Tools Used</h3>
+                                <p>MATLAB, simulation workflows, engineering analysis, documentation</p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">06</p>
+                                <h2>PHP Project Notes</h2>
+                            </div>
+                            <div class="content-grid project-layout">
+                                <section class="paper-panel">
+                                    <h3>Design Intent</h3>
+                                    <p>
+                                        The project was shaped around understanding how thermal design choices
+                                        influence system performance and where simulation can support early decisions.
+                                    </p>
+                                </section>
+                                <section class="paper-panel sketch-panel">
+                                    <h3>Reference Space</h3>
+                                    <div class="sketch-box">
+                                        <span>Simulation or design placeholder</span>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">07</p>
+                                <h2>PID Hydroponic Monitoring</h2>
+                            </div>
+                            <p class="intro-paragraph">
+                                A monitoring and control project built around sensing, feedback, and practical
+                                hardware implementation for stable environmental management.
+                            </p>
+                            <section class="paper-panel">
+                                <h3>Technical Highlights</h3>
+                                <ul class="detail-list">
+                                    <li>PID-based control thinking</li>
+                                    <li>Sensor integration</li>
+                                    <li>Real-time monitoring workflow</li>
+                                </ul>
+                            </section>
+                            <section class="paper-panel">
+                                <h3>Tools Used</h3>
+                                <p>Arduino, sensors, control logic, embedded prototyping</p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">08</p>
+                                <h2>Hydroponic System Notes</h2>
+                            </div>
+                            <div class="content-grid project-layout">
+                                <section class="paper-panel">
+                                    <h3>Implementation Focus</h3>
+                                    <p>
+                                        The system emphasized the relationship between sensing, control response,
+                                        and practical system stability in a physical setup.
+                                    </p>
+                                </section>
+                                <section class="paper-panel sketch-panel">
+                                    <h3>System Placeholder</h3>
+                                    <div class="sketch-box">
+                                        <span>Control loop or hardware layout</span>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">09</p>
+                                <h2>Theremin Design and Build</h2>
+                            </div>
+                            <p class="intro-paragraph">
+                                A hands-on build that connected electronics, sensing behavior, and system
+                                response through a tangible mechatronic device.
+                            </p>
+                            <section class="paper-panel">
+                                <h3>Technical Highlights</h3>
+                                <ul class="detail-list">
+                                    <li>Signal-response behavior</li>
+                                    <li>Electronic integration</li>
+                                    <li>Prototype build and testing</li>
+                                </ul>
+                            </section>
+                            <section class="paper-panel">
+                                <h3>Tools Used</h3>
+                                <p>Circuit design, sensors, embedded logic, system testing</p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">10</p>
+                                <h2>Theremin Project Notes</h2>
+                            </div>
+                            <div class="content-grid project-layout">
+                                <section class="paper-panel">
+                                    <h3>Build Perspective</h3>
+                                    <p>
+                                        This project highlighted how electrical behavior, physical setup, and
+                                        user interaction can shape system performance in a compact prototype.
+                                    </p>
+                                </section>
+                                <section class="paper-panel sketch-panel">
+                                    <h3>Prototype Placeholder</h3>
+                                    <div class="sketch-box">
+                                        <span>Build sketch or wiring concept</span>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">11</p>
+                                <h2>EEG-Based Neural System</h2>
+                            </div>
+                            <p class="intro-paragraph">
+                                A concise study of signal-driven system thinking with emphasis on data flow,
+                                interpretation, and system integration.
+                            </p>
+                            <section class="paper-panel">
+                                <h3>Tools Used</h3>
+                                <p>Signal processing, data analysis, system interpretation</p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">12</p>
+                                <h2>Hydroelectric Dam Design</h2>
+                            </div>
+                            <p class="intro-paragraph">
+                                Conceptual engineering work focused on structure, performance constraints,
+                                and design reasoning in an energy-system context.
+                            </p>
+                            <section class="paper-panel">
+                                <h3>Tools Used</h3>
+                                <p>Design analysis, structural reasoning, engineering documentation</p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">13</p>
+                                <h2>Bicycle Frame FEA</h2>
+                            </div>
+                            <p class="intro-paragraph">
+                                A structural analysis project exploring loading conditions, frame response,
+                                and design confidence through simulation.
+                            </p>
+                            <section class="paper-panel">
+                                <h3>Tools Used</h3>
+                                <p>SolidWorks, FEA, structural analysis, design review</p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-projects" data-chapter="projects">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">14</p>
+                                <h2>P6 Progress Tracker</h2>
+                            </div>
+                            <p class="intro-paragraph">
+                                A scheduling and tracking workflow designed to improve visibility, status
+                                reporting, and disciplined project coordination.
+                            </p>
+                            <section class="paper-panel">
+                                <h3>Tools Used</h3>
+                                <p>Primavera P6, Excel tracking, milestone monitoring, reporting</p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article class="page page-contact" data-chapter="contact">
+                        <div class="page-content">
+                            <div class="page-heading">
+                                <p class="page-number">15</p>
+                                <h2>Contact</h2>
+                            </div>
+                            <p class="intro-paragraph">
+                                Open to engineering conversations, technical collaboration, and project-focused opportunities.
+                            </p>
+                            <div class="contact-card minimal-contact">
+                                <p><strong>Name</strong><br>Monojit Dhar Rommyo</p>
+                                <p><strong>Email</strong><br>you@example.com</p>
+                                <p><strong>LinkedIn</strong><br>linkedin.com/in/yourname</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

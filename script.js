@@ -10,8 +10,8 @@ const bookletApp = document.querySelector(".booklet-app");
 const chapterPageMap = {
     about: 1,
     experience: 3,
-    projects: 5,
-    contact: 15,
+    projects: 6,
+    contact: 16,
 };
 
 let pageFlipInstance = null;

@@ -11,7 +11,8 @@ const chapterPageMap = {
     about: 1,
     experience: 3,
     projects: 6,
-    contact: 16,
+    links: 16,
+    contact: 17,
 };
 
 let pageFlipInstance = null;
